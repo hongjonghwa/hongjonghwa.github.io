@@ -25,7 +25,7 @@ tags:
 
 VM 인스턴스를 생성하기 전에 먼저 개인 key pair 를 준비해 주세요.
 
-[key pair 생성하기][]
+[key pair 생성하기][how-to-create-key-pair]
 
 이제 VM을 생성합니다.
 ![스크린샷2](/assets/screenshots/2020-04-16/screenshot2.png)
