@@ -29,7 +29,7 @@ Generate 버튼을 클릭합니다. (난수 생성을 위해 마우스를 움직
 Key Comment 는 본인이 원하는 데로 입력하세요.
 Key passphrase 는 공란으로 나둡니다.
 
-상단의 Public key 텍스트 영역을 복사하여 파일 이름 "my-key-pair.pem.pub" 으로 저장합니다.  
+이제 상단의 Public key 텍스트 영역을 복사하여 파일 이름 "my-key-pair.pem.pub" 으로 저장합니다.  
 이 파일이 퍼블릭 키파일 입니다.
 
 ![스크린샷3](/assets/screenshots/2020-04-17/screenshot3.png)
@@ -42,8 +42,9 @@ Key passphrase 는 공란으로 나둡니다.
 ### 추가: PPK (PuTTy Private Key) 생성
 
 화면 중간에서 Action > Save private key 버튼을 클릭하여 파일 이름 "my-key-pair.ppk" 으로 저장합니다.
-이 파일은 PuTTy 에서만 사용하는 프라이빗 키 파일 포맷이며,
-Windows PuTTy 어플리케이션에서 SSH 접속시 사용합니다.
+
+이 파일은 PuTTy 에서만 사용하는 프라이빗 키 파일 포맷이며 Windows PuTTy 어플리케이션에서 SSH 접속시 사용합니다.
+
 (PEM 프라이빗 키를 사용해서 변환할 수도 있습니다. )
 
 [putty-homepage]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
