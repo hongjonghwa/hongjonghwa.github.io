@@ -1,3 +1,23 @@
 theme: jekyll-theme-midnight
 title: JH Personal History
 description: I, too, am a programmer.
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: default
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: default
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: default
