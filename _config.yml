@@ -8,7 +8,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: default
+      layout: posts
   # _pages
   - scope:
       path: "_pages"
