@@ -1,10 +1,11 @@
 ---
 title: "key pair 생성하기"
 categories:
-  - linux
+  - programming
 tags:
-  - guide
+  - ssh
 ---
+
 
 ## ssh-keygen 명령어를 사용하여 key pair 생성
 

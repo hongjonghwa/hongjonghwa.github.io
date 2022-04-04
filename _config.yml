@@ -22,7 +22,7 @@ title                    : "JH's Personal History"
 title_separator          : "-"
 subtitle                 : "I, too, am a programmer." # site tagline that appears below site title in ma
 name                     : # "Your Name"
-description              : "An amazing website."
+description              : "" # "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -61,8 +61,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : true # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : false # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -286,8 +286,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: # true
+      read_time: # true
       comments: # true
       share: true
       related: true

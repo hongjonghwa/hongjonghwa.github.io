@@ -1,10 +1,15 @@
 ---
 title: "Keycloak 설정"
 categories:
-  - 아키텍트
+  - programming
 tags:
-  - IAM, Auth, Identify Provider
+  - IAM
+  - Auth
+  - Identify Provider
+  - nginx
+toc: true
 ---
+
 
 ## Test
 
@@ -22,7 +27,8 @@ docker run --rm --name keycloak_test -p 8101:8080 \
     start-dev
 ```
 
-## Prod
+
+## Production
 
 ### docker
 ``` sh
@@ -38,13 +44,23 @@ docker run -d --name keycloak_prod -p 8001:8080 \
     start --proxy edge --hostname <hostname> --auto-build
 ```
 
+
 ### nginx
 ``` nginx
     server {
         listen  80;
         listen  443 ssl http2;
         server_name _;
-        location / {
+        location ^~ /(realms|resources|robots.txt) {
+            proxy_pass http://127.0.0.1:8001;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+        location  / {
+            allow 15.165.164.171;
+            allow 222.107.238.45;
+            deny all;
             proxy_pass http://127.0.0.1:8001;
             proxy_set_header Host $http_host;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;

@@ -1,9 +1,10 @@
 ---
 title: "LATEX '테스트"
 categories:
-  - DS
+  - programming
 tags:
-  - education
+  - ds
+  - latex
 ---
 
 ## LATEX 작동 하는지 테스트
