@@ -57,6 +57,7 @@ docker run -d --name keycloak_prod -p 8001:8080 \
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
         }
+        # admin access
         location  / {
             allow 15.165.164.171;
             allow 222.107.238.45;
