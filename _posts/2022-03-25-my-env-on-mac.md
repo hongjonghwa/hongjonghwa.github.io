@@ -10,7 +10,7 @@ toc: true
 
 
 ## Jekyll 
-``` zsh
+```zsh
 gem install --user-install jekyll
 echo 'export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"' >> ~/.zshrc
 echo 'export GEM_HOME="$HOME/.gem"' >> ~/.zshrc

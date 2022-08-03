@@ -10,7 +10,7 @@ tags:
 ## LATEX 작동 하는지 테스트
 
 
-``` html
+```html
 <script type="text/javascript" async
 	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
 </script>

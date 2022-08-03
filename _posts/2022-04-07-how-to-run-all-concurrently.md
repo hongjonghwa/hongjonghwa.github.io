@@ -11,7 +11,7 @@ toc: false
 
 ## Spring 백엔드 + JS 프로트엔드(npm)
 #### **`package.json`**
-``` json
+```json
 {
   "version": "0.0.0",
   "scripts": {
@@ -32,7 +32,7 @@ toc: false
 
 ## JS 백엔드 + JS 프로트엔드 (yarn)
 #### **`package.json`**
-``` json
+```json
 {
   "version": "0.0.0",
   "scripts": {

@@ -9,7 +9,7 @@ tags:
 
 ## ssh-keygen 명령어를 사용하여 key pair 생성
 
-``` sh
+```sh
 ssh-keygen -t rsa -b 2048 -N "" -C "JH's secret" -f ./my-key-pair.pem
 #=> my-key-pair.pem (프라이빗), my-key-pair.pem.pub (퍼블릭) 2개의 키 파일을 쌍으로 생성
 ```

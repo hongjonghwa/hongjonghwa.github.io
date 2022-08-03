@@ -14,7 +14,7 @@ toc: true
 ## Test
 
 ### docker
-``` sh
+```sh
 docker run --rm --name keycloak_test -p 8101:8080 \
     -e KEYCLOAK_ADMIN=admin \
     -e KEYCLOAK_ADMIN_PASSWORD=<admin_password> \
@@ -31,7 +31,7 @@ docker run --rm --name keycloak_test -p 8101:8080 \
 ## Production
 
 ### docker
-``` sh
+```sh
 docker run -d --name keycloak_prod -p 8001:8080 \
     -e KEYCLOAK_ADMIN=admin \
     -e KEYCLOAK_ADMIN_PASSWORD=<admin_password> \
@@ -46,7 +46,7 @@ docker run -d --name keycloak_prod -p 8001:8080 \
 
 
 ### nginx
-``` nginx
+```nginx
     server {
         listen  80;
         listen  443 ssl http2;
